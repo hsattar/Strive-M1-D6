@@ -94,6 +94,16 @@ printNewLine(16)
 
 printNewLine(17)
 
+const sumAllTheYears = () => {
+  let sumOfMovieYears = 0
+  for (movie of movies) {
+      sumOfMovieYears += parseInt(movie.Year)
+  }
+  console.log(sumOfMovieYears)
+}
+
+sumAllTheYears()
+
 /* EXERCISE 18
     Write a function called searchByTitle which receives a string as a parameter and returns all the movies in the provided movies array which contain that string in the title.
 */
