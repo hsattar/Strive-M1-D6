@@ -40,6 +40,12 @@ oldestMovie()
 
 printNewLine(13)
 
+const countMovies = () => {
+  console.log(movies.length)
+}
+
+countMovies()
+
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
 */
