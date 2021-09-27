@@ -174,7 +174,21 @@ console.log()
 
 printNewLine(10)
 
-console.log()
+const isTodayMyBirthday = (ddmm) => {
+    let todayDate = new Date()
+    let today = todayDate.getDate().toString()
+    let thisMonth = (todayDate.getMonth() + 1).toString()
+    let birthday = ddmm.toString()
 
+    if (today < 10) {
+        today = today.padStart(2, 0)
+    }
+    if (thisMonth < 10) {
+        thisMonth = thisMonth.padStart(2, 0)
+    }
 
-// 9, 10
+    formattedToday = today + thisMonth
+    return formattedToday === birthday ? true : false
+}
+
+console.log(isTodayMyBirthday(2709))
