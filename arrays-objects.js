@@ -96,6 +96,18 @@ console.log(moviesThisMillenium)
 
 printNewLine(16)
 
+const getMovieById = (id) => {
+  let movieId = []
+  for (movie of movies) {
+      movieId.push(movie.imdbID)
+  }
+
+  let indexOfMovie = movieId.indexOf(id)
+  console.log(movies[indexOfMovie].Title)
+}
+
+getMovieById('tt0848228')
+
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
 */
@@ -164,7 +176,7 @@ printNewLine(23)
 
 
 
-// 11, 16, 18+
+// 18+
 
 
 
