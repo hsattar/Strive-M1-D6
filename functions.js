@@ -21,7 +21,17 @@ console.log(dice())
 
 printNewLine(2)
 
-console.log()
+const whoIsBigger = (num1, num2) => {
+    if (num1 > num2) {
+        return num1
+    } else if (num2 > num1) {
+        return num2
+    } else {
+        console.log('Both Numbers Are The Same')
+    }
+}
+
+console.log(whoIsBigger(15, 16))
 
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
