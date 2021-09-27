@@ -131,7 +131,21 @@ whatDayIsIt()
 
 printNewLine(8)
 
-console.log()
+const rollTheDices = diceRollNo => {
+    let rollDiceObject = {
+        sum: 0,
+        values: []
+    }
+    for (i = 0; i < diceRollNo; i++) {
+        let diceRoll = dice()
+        rollDiceObject.sum += diceRoll
+        rollDiceObject.values.push(diceRoll)
+    }  
+    console.log(rollDiceObject)
+}
+
+rollTheDices(3) 
+
 
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
