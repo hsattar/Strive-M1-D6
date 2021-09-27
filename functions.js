@@ -110,7 +110,13 @@ console.log()
 
 printNewLine(7)
 
-console.log()
+const whatDayIsIt = () => {
+    let today = new Date().getDay()
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    console.log(days[today])
+}
+
+whatDayIsIt()
 
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
