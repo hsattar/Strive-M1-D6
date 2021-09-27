@@ -130,6 +130,29 @@ sumAllTheYears()
 
 printNewLine(18)
 
+const searchByTitle = movieName => {
+
+  let movieTitles = []
+  let searchResults = []
+  
+  for (movie of movies) {
+      movieTitles.push(movie.Title)
+  }
+  console.log(movieTitles)
+  
+  for (let i = 0; i < movieTitles.length; i++) {
+      let searchValue = movieTitles[i].search(movieName)
+      if (searchValue > 0) {
+          searchResults.push(movieTitles[i])
+      }
+  }
+  
+  console.log(searchResults)
+}
+
+searchByTitle('Lord')
+
+
 /* EXERCISE 19
     Write a function called searchAndDivide which receives a string as a parameter and returns an object;
     this object should contain an array called match, made by all the movies from the provided movies array which contain the given string in the title,
@@ -196,7 +219,7 @@ const isItPrime = number => {
 console.log(isItPrime(49))
 
 
-// 18, 19, 21, 22
+// 19, 21, 22
 
 
 
