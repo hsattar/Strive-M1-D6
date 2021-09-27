@@ -66,7 +66,35 @@ console.log(deleteOne('hi i am bob', true))
 
 printNewLine(5)
 
-console.log()
+const onlyLetters = string => {
+
+    console.log(string)
+    let stringArray = string.split('')
+
+    for (let i = 0; i < stringArray.length; i++) {
+        switch (stringArray[i]) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':   
+            case '5':   
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+                let numberIndex = i
+                stringArray.splice(numberIndex, 1)
+                break;
+                default:           
+        }
+    }   
+
+    string = stringArray.join('')
+    console.log(string)
+}
+
+onlyLetters('I have 4 dogs and 2 cats')
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
