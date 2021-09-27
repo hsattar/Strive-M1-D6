@@ -39,6 +39,14 @@ console.log(random)
 
 printNewLine('D')
 
+let me = {
+    name: 'Hasan',
+    surname: 'Sattar',
+    age: 23
+}
+
+console.log(me)
+
 /* EXERCISE E
     Write a piece of code for programmatically removing the age property from the previously create object.
 */
