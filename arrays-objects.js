@@ -182,16 +182,18 @@ printNewLine(22)
 printNewLine(23)
 
 const isItPrime = number => {
-  if ((number > 3) && (number % 2 === 0)) {
+  if ((number > 2) && (number % 2 === 0)) {
       return false
   } else if ((number > 3) && (number % 3 === 0)) {
+      return false
+  } else if ((number > 7) && (number % 7 === 0)) {
       return false
   } else {
       return true
   }
 }
 
-console.log(isItPrime(17))
+console.log(isItPrime(49))
 
 
 // 18, 19, 21, 22
