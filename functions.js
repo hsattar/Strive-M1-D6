@@ -162,3 +162,6 @@ console.log()
 printNewLine(10)
 
 console.log()
+
+
+// 6, 9, 10
