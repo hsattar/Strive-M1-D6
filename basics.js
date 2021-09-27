@@ -72,6 +72,8 @@ console.log(me)
 
 printNewLine('G')
 
+me.skills.pop()
+console.log(me)
 
 
 
