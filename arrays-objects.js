@@ -12,6 +12,14 @@ const printNewLine = question => {
 
 printNewLine(11)
 
+const deleteProp = (object, property) => {
+  console.log(object)
+  delete object[property]
+  console.log(object)
+}
+
+deleteProp(movies[0], 'Type')
+
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
@@ -156,7 +164,7 @@ printNewLine(23)
 
 
 
-// 11, 16+
+// 11, 16, 18+
 
 
 
