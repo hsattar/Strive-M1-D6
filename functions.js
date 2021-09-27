@@ -40,13 +40,11 @@ console.log(whoIsBigger(15, 16))
 
 printNewLine(3)
 
-let randomString = 'I Love Coding'
-
 const splitMe = string => {
     return string.split(' ')
 }
 
-console.log(splitMe(randomString))
+console.log(splitMe('I Love Coding'))
 
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
@@ -55,7 +53,11 @@ console.log(splitMe(randomString))
 
 printNewLine(4)
 
-console.log()
+const deleteOne = (string, boolean) => {
+    return boolean === true ? string.slice(1) : string.substr(0, string.length-1)
+}
+
+console.log(deleteOne('hi i am bob', true))
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
