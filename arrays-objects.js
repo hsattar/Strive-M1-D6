@@ -142,6 +142,13 @@ printNewLine(19)
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
 
+const removeIndex = index => {
+  movies.splice(index, 1)
+  console.log(movies)
+}
+
+removeIndex(12)
+
 printNewLine(20)
 
 // [EXTRAS] JS Advanced
