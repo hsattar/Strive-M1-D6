@@ -52,6 +52,17 @@ countMovies()
 
 printNewLine(14)
 
+let movieTitles = []
+
+const onlyTheTitles = () => {
+    for (movie of movies) {
+        movieTitles.push(movie.Title)
+    }
+}
+
+onlyTheTitles()
+console.log(movieTitles)
+
 /* EXERCISE 15
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
 */
