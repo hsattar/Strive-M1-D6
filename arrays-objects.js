@@ -132,25 +132,19 @@ printNewLine(18)
 
 const searchByTitle = movieName => {
 
-  let movieTitles = []
   let searchResults = []
   
-  for (movie of movies) {
-      movieTitles.push(movie.Title)
-  }
-  console.log(movieTitles)
-  
-  for (let i = 0; i < movieTitles.length; i++) {
-      let searchValue = movieTitles[i].search(movieName)
-      if (searchValue > 0) {
-          searchResults.push(movieTitles[i])
+  for (let i = 0; i < movies.length; i++) {
+      let searchValue = movies[i]['Title'].search(movieName)
+      if (searchValue >= 0) {
+          searchResults.push(movies[i]['Title'])
       }
   }
   
   console.log(searchResults)
 }
 
-searchByTitle('Lord')
+searchByTitle('Avengers')
 
 
 /* EXERCISE 19
@@ -160,6 +154,26 @@ and another array unmatch with all the remaining ones.
 */
 
 printNewLine(19)
+
+const searchByTitle = movieName => {
+
+  let match = []
+  let unmatch = []
+      
+  for (let i = 0; i < movies.length; i++) {
+      let searchValue = movies[i]['Title'].search(movieName)
+      if (searchValue >= 0) {
+          match.push(movies[i])
+      } else {
+          unmatch.push(movies[i])
+      }
+  }
+  
+  console.log(match)
+  console.log(unmatch)
+}
+
+searchByTitle('Lord')
 
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
