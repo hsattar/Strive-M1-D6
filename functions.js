@@ -40,7 +40,13 @@ console.log(whoIsBigger(15, 16))
 
 printNewLine(3)
 
-console.log()
+let randomString = 'I Love Coding'
+
+const splitMe = string => {
+    return string.split(' ')
+}
+
+console.log(splitMe(randomString))
 
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
