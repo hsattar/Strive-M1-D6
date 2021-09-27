@@ -233,10 +233,6 @@ const isItPrime = number => {
 console.log(isItPrime(49))
 
 
-// 19, 21, 22
-
-
-
 /* This movies array is used throughout the exercises. You're not supposed to alter it. */
 const movies = [
     {

@@ -166,7 +166,15 @@ rollTheDices(3)
 
 printNewLine(9)
 
-console.log()
+const howManyDays = chosenDate => {
+    let today = new Date();
+    let difference = today - chosenDate;
+    let days = 1000 * 60 * 60* 24
+    return Math.floor(difference / days)
+};
+
+console.log(howManyDays(new Date("2021-09-25")));
+
 
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
