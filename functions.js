@@ -102,7 +102,20 @@ onlyLetters('I have 4 dogs and 2 cats')
 
 printNewLine(6)
 
-console.log()
+const isThisAnEmail = emailAddress => {
+    emailAtPosition = emailAddress.search('@')
+    emailDotPosition = emailAddress.search('.com')
+
+
+    if ((emailAtPosition > 0) && (emailDotPosition > 0) && (emailAtPosition < emailDotPosition)) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(isThisAnEmail('h@hoo.com'))
+
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
@@ -164,4 +177,4 @@ printNewLine(10)
 console.log()
 
 
-// 6, 9, 10
+// 9, 10

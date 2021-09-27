@@ -154,9 +154,9 @@ searchByTitle('Lord')
 
 
 /* EXERCISE 19
-    Write a function called searchAndDivide which receives a string as a parameter and returns an object;
-    this object should contain an array called match, made by all the movies from the provided movies array which contain the given string in the title,
-    and another array unmatch with all the remaining ones.
+Write a function called searchAndDivide which receives a string as a parameter and returns an object;
+this object should contain an array called match, made by all the movies from the provided movies array which contain the given string in the title,
+and another array unmatch with all the remaining ones.
 */
 
 printNewLine(19)
