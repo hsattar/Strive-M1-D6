@@ -69,6 +69,19 @@ console.log(movieTitles)
 
 printNewLine(15)
 
+let moviesThisMillenium = []
+
+const onlyInThisMillennium = () => {
+    for (movie of movies) {
+        if (movie.Year >= 2000) {
+            moviesThisMillenium.push(movie.Title)
+        }
+    }
+}
+
+onlyInThisMillennium() 
+console.log(moviesThisMillenium)
+
 /* EXERCISE 16 
     Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
 */
